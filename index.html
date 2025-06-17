@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masedur Rahaman | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="profile">
+      <img src="masedur_image.jpg" alt="Masedur Rahaman" class="profile-pic" />
+      <div>
+        <h1><span class="typing"></span></h1>
+        <p>Engineering Student | B.Tech 2nd Year (ECE)</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an engineering student currently pursuing B.Tech in Electronics and Communication (ECE) – 2nd year. I love building projects and learning new things. Passionate about coding, electronics, and solving real-world problems.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Video Editing</span>
+        <span>C Programming</span>
+        <span>Python</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Arduino</span>
+        <span>Project Building</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Line Follower Robot using Arduino</li>
+        <li>Simple Calculator using Python</li>
+        <li>Personal Portfolio Website</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p><a class="glow-button" href="mailto:masedur.ece@gmail.com">Email Me</a></p>
+      <p><a class="glow-button" href="https://www.facebook.com/Masedur.Rahaman.Ece" target="_blank">Facebook</a></p>
+      <p><a class="glow-button" href="https://www.instagram.com/masedur_ece" target="_blank">Instagram</a></p>
+      <p><a class="glow-button" href="https://in.linkedin.com/in/masedur-ece-a63974310" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Masedur Rahaman</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    var typed = new Typed(".typing", {
+      strings: ["Masedur Rahaman", "Pro Coder", "Arduino Enthusiast", "Future ECE Engineer"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+
+    ScrollReveal().reveal('section', {
+      origin: 'bottom',
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      reset: false,
+      interval: 200
+    });
+
+    ScrollReveal().reveal('.profile-pic', {
+      origin: 'top',
+      distance: '30px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      reset: false
+    });
+  </script>
+</body>
+</html>

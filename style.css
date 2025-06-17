@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  padding: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #490101;
+  padding: 10px 0;
+  box-shadow: 0 0 15px rgba(19, 243, 255, 0.6);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #f0fc0e;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  color: #31e931;
+  text-shadow: 0 0 10px #f43f5e;
+}
+
+header {
+  text-align: center;
+  margin: 100px 0 40px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #1bfc32;
+  box-shadow: 0 0 25px #ebf43f;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: glow 3s infinite alternate;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px #cae117;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f43f5e;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(197, 255, 5, 0.884);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(165, 62, 255, 0.916);
+}
+
+h2 {
+  color: #f4ff26;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #2c2c2c;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #fb7185;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.skills span:hover {
+  background: #08e5f1;
+  color: #000000;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #2ee7ff;
+}
+
+.glow-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4ee389;
+  color: #0f0f0f;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 15px #f43f5e;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.glow-button:hover {
+  background: #fd0ee9;
+  box-shadow: 0 0 30px #cd0af4d4;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #f43f5e; }
+  50% { box-shadow: 0 0 30px #fb7185; }
+  100% { box-shadow: 0 0 10px #f43f5e; }
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 80px 20px 20px;  /* 👈 Extra top padding for navbar clearance */
+  background: #1a1a1a;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(244, 63, 94, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  scroll-margin-top: 80px;  /* 👈 Ensures scroll positions below navbar */
+}
